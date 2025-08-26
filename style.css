@@ -88,8 +88,10 @@ body {
 }
 
 .button-container {
+    display: flex;
     width: 300px;
     justify-content: center;
+    gap:5px;
 }
 
 /* Estilos de entrada de texto */
@@ -121,9 +123,20 @@ button {
     border-radius: 0 25px 25px 0;
 }
 
+.button-add-activo {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add-activo:hover {
+    background-color: var(--color-button);
+}
+
+/*
 .button-add:hover {
     background-color: #a1a1a1;
-}
+}*/
 
 /* Listas */
 ul {
@@ -132,6 +145,10 @@ ul {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+}
+
+li{
+    display: inline-block;
 }
 
 .result-list {
@@ -160,3 +177,28 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+.button-draw-New {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-tertiary);
+    font-size: 16px;
+}
+
+
+
+.button-draw-New:hover {
+    background-color: var(--color-text);
+}
+
+
+.seleccionado {
+    font-weight: bold;
+    color: red;
+    transition: color 0.2s, font-weight 0.2s;
+}
+
+
